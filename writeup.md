@@ -39,7 +39,11 @@ My pipeline consisted of 7 steps.
 
 
 1. Time optimization can be improved to get higher throughput specially for video
-2. The "solidYellowLeft" video has an issue that in some frames the lines are not correct
+2. colours filtering was not used , need to be introduced for better accuracy on the cost of computation power
+3. The "solidYellowLeft" video has an issue that in some frames the lines are not correct
+update:
+third issue was fixed by introducing a reject filter for lines from one side changing the slope for the oppsoite side
+there was an idea of using a 3 point average filter by averaging the obtained sloped with 2 previous samples; could be used in the future perhaps with the challenge video
 
 
 ### 3. Suggest possible improvements to your pipeline
